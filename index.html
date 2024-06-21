@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator with JS</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <H1>
+            Calculator with JS
+        </H1>
+    </header>
+    <div class="container">
+        <table id="calculator">
+            <tr>
+                <td colspan="3"><input type="text" id="mainDisplay"></td>
+                <td><input type="button" class="clear" id="clearID" value="C" onclick="clearDisplay()"></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="history"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="number" id="number7" value="7" onclick="putOnDisplay(value)"></td>
+                <td><input type="button" class="number" id="number8" value="8" onclick="putOnDisplay(value)"></td>
+                <td><input type="button" class="number" id="number9" value="9" onclick="putOnDisplay(value)"></td>
+                <td><input type="button" class="operator" id="operator+" value="+" onclick="putOnDisplay(value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="number" id="number4" value="4" onclick="putOnDisplay(value)"></td>
+                <td><input type="button" class="number" id="number5" value="5" onclick="putOnDisplay(value)"></td>
+                <td><input type="button" class="number" id="number6" value="6" onclick="putOnDisplay(value)"></td>
+                <td><input type="button" class="operator" id="operator-" value="-" onclick="putOnDisplay(value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="number" id="number1" value="1" onclick="putOnDisplay(value)"></td>
+                <td><input type="button" class="number" id="number2" value="2" onclick="putOnDisplay(value)"></td>
+                <td><input type="button" class="number" id="number3" value="3" onclick="putOnDisplay(value)"></td>
+                <td><input type="button" class="operator" id="operator*" value="*" onclick="putOnDisplay(value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="number" id="number0" value="0" onclick="putOnDisplay(value)"></td>
+                <td><input type="button" class="number" id="dot" value="." onclick="putOnDisplay(value)"></td>
+                <td><input type="button" class="equals" id="equalsID" value="=" onclick="calculate()"></td>
+                <td><input type="button" class="operator" id="operator/" value="/" onclick="putOnDisplay(value)"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

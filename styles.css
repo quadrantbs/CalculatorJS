@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --1: #DDE8B9;
+    --2: #E8D2AE;
+    --3: #D7B29D;
+    --4: #CB8589;
+    --5: #796465;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+html {
+    background-color: var(--5);
+    color: var(--1);
+}
+
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: var(--2);
+    width: 100%;
+    padding: 35px;
+}
+
+td {
+    text-align: center;
+    margin: 0;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+td input {
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: #DDE8B9;
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--4);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.number,
+.operator,
+.equals {
+    border-radius: 10px;
+    width: 95%;
+}
+
+#mainDisplay {
+    width: 80%;
+    cursor: text;
+    text-align: right;
+}
+
+table {
+    border: 1px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.clear {
+    width: 100%;
+    border-radius: 10px;
+}
